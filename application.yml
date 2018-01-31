@@ -9,21 +9,18 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/EMPLOYEE_DB
+      uri: mongodb://localhost:37017/test
 
 ---
 
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/microservices
-    username: admin
-    password: admin
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@10.2.0.28:1521:orcl
+    username: Orclexi01
+    password: Orclexi01
   jpa:
-    hibernate:
-      ddl-auto: update  
-    show-sql: true      
-
+   show-sql: true   
 ---
 spring:
   cloud:
